@@ -1,0 +1,58 @@
+<div class="card card-register">
+  <div class="card-header">
+    <img alt="Card image" class="card-img" src="assets/img/square1-red.png" />
+
+    <h4 class="card-title">Donate</h4>
+  </div>
+  <div class="card-body">
+
+    <div class="mt-2" *ngIf="showSuccess">
+      <div class="alert alert-success mt-2">
+        Yeah! Your <em>sandbox</em> transaction was successful.
+      </div>
+    </div>
+    
+    <div class="mt-2" *ngIf="showError">
+      <div class="alert alert-danger mt-2">
+        Oh no! Your <em>sandbox</em> transaction failed.
+      </div>
+    </div>
+    
+    <div class="mt-2" *ngIf="showCancel">
+      <div class="alert alert-info mt-2">Your transaction was cancelled.</div>
+    </div>
+    
+    <form class="form" name="form" #f="ngForm">
+      <div
+        class="input-group"
+        [ngClass]="{ 'input-group-focus': focus === true }"
+      >
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="tim-icons icon-money-coins"> </i>
+          </div>
+        </div>
+        <input
+          class="form-control"
+          placeholder="Price"
+          name="defaultPrice"
+          [(ngModel)]="defaultPrice"
+          (ngModelChange)="changePrice()"
+          type="text"
+          #priceElem
+          (focus)="focus = true"
+          (blur)="focus = false"
+        />
+        <button
+          class="btn btn-primary btn-sm input-group-prepend"
+          (click)="changePrice()"
+        >
+          amount
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="card-footer">
+    <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+  </div>
+</div>
