@@ -1,117 +1,43 @@
-<!-- <div class="card text-center">
-
-  <h4 class="card-title">Donate</h4>
-  <div class="card-body">
-    
-    <div class="mt-2" *ngIf="showSuccess">
-      <div class="alert alert-success mt-2">
-        Yeah! Your <em>sandbox</em> transaction was successful.
-      </div>
-    </div>
-    
-    <div class="mt-2" *ngIf="showError">
-      <div class="alert alert-danger mt-2">
-        Oh no! Your <em>sandbox</em> transaction failed.
-      </div>
-    </div>
-    
-    <div class="mt-2" *ngIf="showCancel">
-      <div class="alert alert-info mt-2">Your transaction was cancelled.</div>
-    </div>
-    
-    <form class="form" name="form" #f="ngForm">
-      <div
-        class="input-group"
-        [ngClass]="{ 'input-group-focus': focus === true }"
-      >
-        <div class="input-group-prepend">
-          <div class="input-group-text">
-            <i class="tim-icons icon-money-coins"> </i>
-          </div>
-        </div>
-        <input
-          class="form-control"
-          placeholder="Price"
-          name="defaultPrice"
-          [(ngModel)]="defaultPrice"
-          (ngModelChange)="changePrice()"
-          type="text"
-          #priceElem
-          (focus)="focus = true"
-          (blur)="focus = false"
-        />
-        <button
-          class="btn btn-primary btn-sm input-group-prepend"
-          (click)="changePrice()"
-        >
-          amount
-        </button>
-      </div>
-    </form>
-
-    <ngx-paypal [config]="payPalConfig"></ngx-paypal>
-  </div>
-  <div class="card-footer">
-   
-  </div>
-</div> -->
 
 <article class="postcard blue">
-  <a class="postcard__img_link" href="#">
-    <img
-      class="postcard__img"
-      src="assets/img/chester-wade.jpg"
-      alt="Image Title"
-    />
-  </a>
+  <app-slider></app-slider>
+
   <div class="postcard__text">
     <h1 class="postcard__title blue"><a href="#">Donate</a></h1>
-    <!-- <div class="postcard__subtitle small">
-      <time datetime="2020-05-25 12:00:00">
-        <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-      </time>
-    </div> -->
+
     <div class="postcard__bar"></div>
     <div class="postcard__preview-txt">
-      {{ "common.case1-desc" | translate }}
+      <ul>
+        <li>
+          Donate the price of a cup of tea and feed childrens. 
+        </li>
+        <li>
+          Feed a child for as little as $1 a day.
+        </li>
+        <li>
+          Making a donation is a way of reaching out a helping hand. By providing even a small donation, you can be part of an effort to provide medical assistance, 
+          supply food and shelter, and help families rebuild their lives and communities
+        </li>
+        <li>
+          We need your help today to supply medicine to families in Syria.
+          Medicines and medical supplies are increasingly scarce, and only half
+          of the health facilities are fully functioning.
+        </li>
+      </ul>
     </div>
     <div class="postcard__tagbox">
       <form class="form" name="form" #f="ngForm">
-        <!-- <div
-          class="input-group"
-          [ngClass]="{ 'input-group-focus': focus === true }"
-        >
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <i class="tim-icons icon-money-coins"> </i>
-            </div>
-          </div>
-          <input
-            class="form-control"
-            placeholder="Price"
-            name="defaultPrice"
-            [(ngModel)]="defaultPrice"
-            (ngModelChange)="changePrice()"
-            type="text"
-            #priceElem
-            (focus)="focus = true"
-            (blur)="focus = false"
-          />
-          <button
-            class="btn btn-primary btn-sm input-group-prepend"
-            (click)="changePrice()"
-          >
-            amount
-          </button>
-        </div> -->
-
         <div class="form-group">
           <label>
             <i class="tim-icons icon-money-coins"> </i> Donation amount</label
           >
           <div class="input-group mb-3">
-            <select class="form-control drop-code "  name="defaultPrice" [(ngModel)]="defaultPrice"
-            (change)="changePrice($event.target.value)">
+            <select
+              class="form-control drop-code"
+              name="defaultPrice"
+              [(ngModel)]="defaultPrice"
+              (change)="changePrice($event.target.value)"
+            >
               <option value="3">3</option>
               <option value="10">10</option>
               <option value="50">50</option>

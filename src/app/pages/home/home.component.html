@@ -1,0 +1,425 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div class="page-header header-filter">
+    <div class="squares square1"></div>
+    <div class="squares square2"></div>
+    <div class="squares square3"></div>
+    <div class="squares square4"></div>
+    <div class="squares square5"></div>
+    <div class="squares square6"></div>
+    <div class="squares square7"></div>
+    <div class="container">
+      <div class="content-center brand">
+        <h1 class="h1-seo">World Charity</h1>
+        <h3>
+          What you give today will help prevent Child Hunger in the lives of
+          many tomorrow.
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <!-- <div class="section section-notifications" id="notifications">
+      <div class="container">
+        <div class="space"></div>
+        <h3>Notifications</h3>
+        <alert
+          class="alert-with-icon"
+          [type]="'primary alert-with-icon'"
+          [dismissible]="true"
+        >
+          <span class="tim-icons icon-coins" data-notify="icon"> </span>
+          <span>
+            <b> Congrats! - </b> This is a regular notification made with
+            ".alert-primary"
+          </span>
+        </alert>
+        <alert
+          class="alert-with-icon"
+          [type]="'info alert-with-icon'"
+          [dismissible]="true"
+        >
+          <span class="tim-icons icon-trophy" data-notify="icon"> </span>
+          <span>
+            <b> Heads up! - </b> This is a regular notification made with
+            ".alert-info"
+          </span>
+        </alert>
+        <alert
+          class="alert-with-icon"
+          [type]="'success alert-with-icon'"
+          [dismissible]="true"
+        >
+          <span class="tim-icons icon-bell-55" data-notify="icon"> </span>
+          <span>
+            <b> Well done! - </b> This is a regular notification made with
+            ".alert-success"
+          </span>
+        </alert>
+        <alert
+          class="alert-with-icon"
+          [type]="'warning alert-with-icon'"
+          [dismissible]="true"
+        >
+          <span class="tim-icons icon-bulb-63" data-notify="icon"> </span>
+          <span>
+            <b> Warning! - </b> This is a regular notification made with
+            ".alert-warning"
+          </span>
+        </alert>
+        <alert
+          class="alert-with-icon"
+          [type]="'danger alert-with-icon'"
+          [dismissible]="true"
+        >
+          <span class="tim-icons icon-support-17" data-notify="icon"> </span>
+          <span>
+            <b> Oh snap! - </b> This is a regular notification made with
+            ".alert-danger"
+          </span>
+        </alert>
+      </div>
+    </div> -->
+
+    <div class="section section-javascript" id="javascriptComponents">
+      <img class="path" src="assets/img/path5.png" />
+
+      <img class="path path1" src="assets/img/path5.png" />
+
+      <div class="section">
+        <div class="container">
+          <!-- <div class="title"><h3>Carousel</h3></div> -->
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <h1 class="text-white font-weight-light">DONATE NOW</h1>
+              <p class="text-white mt-4">
+                Give the Gift of Sight today, change a life tomorrow ,1 Of Every
+                6 Young Children In The World Lives With Hunger. As you may
+                envision many of these hungry children don’t get the nutrition
+                they need.
+              </p>
+              <a class="btn btn-warning mt-4" [routerLink]="['/donate']">
+                Donate
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <app-slider></app-slider>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-nucleo-icons">
+      <img class="path" src="assets/img/path3.png" />
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12">
+            <h2 class="title">Our Impact</h2>
+            <h4 class="description">
+              We’ve helped provide more than 50,000 meals to over 240,270 Hungry Children in need. Join In Today! Each dollar you give will feed many childrens .
+            </h4>
+            <div class="btn-wrapper">
+              <a
+                class="btn btn-danger btn-round mr-1"
+                [routerLink]="['/donate']"
+              >
+                Donate
+              </a>
+             
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <div class="section section-signup">
+      <div class="container">
+        <div class="squares square-1"></div>
+        <div class="squares square-2"></div>
+        <div class="squares square-3"></div>
+        <div class="squares square-4"></div>
+      
+      </div>
+    </div>
+    <div class="section section-examples" data-background-color="black">
+      <img class="path" src="assets/img/path1.png" />
+
+      <div class="space-50"></div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-6">
+            <a  [routerLink]="['/donate']">
+              <img
+                alt="Image"
+                class="img-raised"
+                src="assets/img/poor/sa.jpg"
+              />
+            </a>
+            <a
+              class="btn btn-simple btn-danger btn-round"
+              [routerLink]="['/donate']"
+            >
+              Donate
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a  [routerLink]="['/donate']">
+              <img
+                alt="Image"
+                class="img-raised"
+                src="assets/img/poor/saa.jpg"
+              />
+            </a>
+            <a
+              class="btn btn-simple btn-danger btn-round"
+              [routerLink]="['/donate']"
+            >
+              Donate
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-download" data-background-color="black" #target>
+      <img class="path" src="assets/img/path1.png" />
+
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="text-center col-md-12 col-lg-8">
+            <h2 class="title">
+              Medical Rescue
+            </h2>
+            <h4 class="description">
+              This activity includes obtaining excess Medical Supplies and Medicines from Hospitals, Urgent Care Centers and Doctor Offices. We develop relations with Hospitals, Urgent Care Centers and Doctor Offices and obtain their excess Medical Supplies and Medicines that are brand new and perfectly good As it is costly to them to have to haul it to the landfill and pay dumping fees they will gladly ask us to pick it up from them.
+            </h4>
+          </div>
+          <div class="text-center col-md-12 col-lg-8">
+            <a
+              class="btn btn-danger btn-round btn-lg"
+              [routerLink]="['/donate']"
+              role="button"
+            >
+              Donate
+            </a>
+          </div>
+        </div>
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <div class="row row-grid align-items-center my-md">
+          <div class="col-lg-6">
+            <h3 class="text-danger font-weight-light mb-2">
+              Thank you for supporting us!
+            </h3>
+            <h4 class="mb-0 font-weight-light">
+             You are life saver
+            </h4>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="myModalLabel"
+      bsModal
+      class="modal fade"
+      #myModal="bs-modal"
+      id="myModal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              aria-hidden="true"
+              class="close"
+              data-dismiss="modal"
+              type="button"
+              (click)="myModal.hide()"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+            <h4 class="title title-up">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean. A small river named Duden flows by their
+              place and supplies it with the necessary regelialia. It is a
+              paradisematic country, in which roasted parts of sentences fly
+              into your mouth.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" type="button">Nice Button</button>
+            <button
+              class="btn btn-danger"
+              data-dismiss="modal"
+              type="button"
+              (click)="myModal.hide()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="myModalLabel"
+      bsModal
+      class="modal fade modal-mini modal-danger modal-mini"
+      #myModal1="bs-modal"
+      id="myModal1"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              aria-hidden="true"
+              class="close"
+              data-dismiss="modal"
+              (click)="myModal1.hide()"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove text-white"> </i>
+            </button>
+            <div class="modal-profile">
+              <i class="tim-icons icon-single-02"> </i>
+            </div>
+          </div>
+          <div class="modal-body">
+            <p>Always have an access to your profile</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-link btn-neutral" type="button">Back</button>
+            <button
+              class="btn btn-link btn-neutral"
+              data-dismiss="modal"
+              type="button"
+              (click)="myModal1.hide()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="myModalLabel"
+      bsModal
+      class="modal fade modal-black"
+      #myModal2="bs-modal"
+      id="myModal2"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              aria-hidden="true"
+              class="close"
+              data-dismiss="modal"
+              (click)="myModal2.hide()"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove text-white"> </i>
+            </button>
+            <div class="text-muted text-center ml-auto mr-auto">
+              <h3 class="mb-0">Sign in with</h3>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="btn-wrapper text-center">
+              <a
+                class="btn btn-neutral btn-icon mr-1"
+                href="javascript:void(0)"
+              >
+                <img src="assets/img/github.svg" />
+              </a>
+              <a class="btn btn-neutral btn-icon" href="javascript:void(0)">
+                <img src="assets/img/google.svg" />
+              </a>
+            </div>
+            <div class="text-center text-muted mb-4 mt-3">
+              <small> Or sign in with credentials </small>
+            </div>
+            <form role="form">
+              <div class="form-group mb-3">
+                <div
+                  class="input-group input-group-alternative"
+                  [ngClass]="{ 'input-group-focus': focus1 === true }"
+                >
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="tim-icons icon-email-85"> </i>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Email"
+                    type="email"
+                    (focus)="focus1 = true"
+                    (blur)="focus1 = false"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div
+                  class="input-group input-group-alternative"
+                  [ngClass]="{ 'input-group-focus': focus2 === true }"
+                >
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="tim-icons icon-key-25"> </i>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Password"
+                    type="password"
+                    (focus)="focus2 = true"
+                    (blur)="focus2 = false"
+                  />
+                </div>
+              </div>
+              <div class="form-check mt-3">
+                <label class="form-check-label">
+                  <input
+                    checked="checked"
+                    class="form-check-input"
+                    type="checkbox"
+                  />
+
+                  <span class="form-check-sign"> </span> Remember me!
+                </label>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary my-4" type="button">
+                  Sign in
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

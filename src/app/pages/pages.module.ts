@@ -3,10 +3,8 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
-import { TranslateModule } from '@ngx-translate/core';
 import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
 import { AlertModule } from "ngx-bootstrap/alert";
-import { CarouselModule } from "ngx-bootstrap/carousel";
 import { CollapseModule } from "ngx-bootstrap/collapse";
 import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
 import { BsDropdownModule } from "ngx-bootstrap/dropdown";
@@ -16,12 +14,16 @@ import { PopoverModule } from "ngx-bootstrap/popover";
 import { ProgressbarModule } from "ngx-bootstrap/progressbar";
 import { TabsModule } from "ngx-bootstrap/tabs";
 import { TooltipModule } from "ngx-bootstrap/tooltip";
+import { NavbarModule } from '../shared/components/navbar/navbar.module';
 import { PayDonateModule } from '../shared/components/pay/pay-donate.module';
+import { SliderModule } from '../shared/components/slider/slider.module';
 import { TranslationModule } from '../shared/modules/translation-module';
-import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
-import { ProfilepageComponent } from "./examples/profilepage/profilepage.component";
-import { RegisterpageComponent } from "./examples/registerpage/registerpage.component";
-import { IndexComponent } from "./index/index.component";
+import { DonatepageComponent } from "./donate/donate.component";
+import { LandingpageComponent } from "./landingpage/landingpage.component";
+import { HomeComponent } from "./home/home.component";
+import { AboutUsComponent } from './about-us/aboutus.component';
+import { ContactpageComponent } from './contact/contact.component';
+import { FooterModule } from '../shared/components/footer/footer.module';
 
 
 @NgModule({
@@ -40,24 +42,26 @@ import { IndexComponent } from "./index/index.component";
     PaginationModule.forRoot(),
     AlertModule.forRoot(),
     BsDatepickerModule.forRoot(),
-    CarouselModule.forRoot(),
     ModalModule.forRoot(),
     PayDonateModule,
-    TranslationModule
+    TranslationModule,
+    SliderModule,
+    NavbarModule,
+    FooterModule
   ],
   declarations: [
-    IndexComponent,
-    ProfilepageComponent,
-    RegisterpageComponent,
+    HomeComponent,
+    DonatepageComponent,
+    AboutUsComponent,
+    ContactpageComponent,
     LandingpageComponent
   ],
   exports: [
     FormsModule,
-    IndexComponent,
-    ProfilepageComponent,
-    RegisterpageComponent,
+    HomeComponent,
+    DonatepageComponent,
     LandingpageComponent,
-    TranslationModule
+    TranslationModule,
   ],
   providers: []
 })

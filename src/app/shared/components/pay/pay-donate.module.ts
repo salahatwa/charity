@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PayDonateComponent } from './pay-donate.component';
-import { NgxPayPalModule } from '../paypal/ngx-paypal.module';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SuccessPayDialogComponent } from './dialogs/success-pay-dialog.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslationModule } from '../../modules/translation-module';
+import { NgxPayPalModule } from '../paypal/ngx-paypal.module';
+import { SliderModule } from '../slider/slider.module';
+import { SuccessPayDialogComponent } from './dialogs/success-pay-dialog.component';
+import { PayDonateComponent } from './pay-donate.component';
 
 
 
@@ -14,12 +15,13 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     FormsModule,
-    TranslateModule,
+    TranslationModule,
     ModalModule.forRoot(),
-    NgxPayPalModule
+    NgxPayPalModule,
+    SliderModule
   ],
-  exports:[
-    PayDonateComponent,SuccessPayDialogComponent
+  exports: [
+    PayDonateComponent, SuccessPayDialogComponent
   ]
 })
 export class PayDonateModule { }

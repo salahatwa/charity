@@ -43,6 +43,8 @@ export class PayDonateComponent implements OnInit {
   }
 
 
+  //Test
+  //AQ-coUWjorcLHWsXToyV4ZMsV2Ui7iwfWereajpmtImFKsREcR0eQB2pq-lxv1xmQK3okJiXwhOw96xZ
   //PROD 
   //AaFVrgASF8iOOgVccacn5-bmeUmedPj_G2LCPvhRkuHBiWSIqdPLvmJ5y4Rccrk_4WuGeeLsLAyagypF
   initPayPalConfig(price: string): IPayPalConfig {
@@ -50,7 +52,7 @@ export class PayDonateComponent implements OnInit {
       local: this.storageSevrice.getLocal(),
       intent: 'CAPTURE',
       currency: 'USD',
-      clientId: 'AQ-coUWjorcLHWsXToyV4ZMsV2Ui7iwfWereajpmtImFKsREcR0eQB2pq-lxv1xmQK3okJiXwhOw96xZ',
+      clientId: 'AaFVrgASF8iOOgVccacn5-bmeUmedPj_G2LCPvhRkuHBiWSIqdPLvmJ5y4Rccrk_4WuGeeLsLAyagypF',
       createOrderOnClient: (data) => <ICreateOrderRequest>{
         intent: 'CAPTURE',
 

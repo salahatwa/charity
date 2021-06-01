@@ -16,7 +16,7 @@ Each element is well presented in a very complex documentation. You can read mor
 
 ## Bootstrap 4 Support
 
-World Charity Design System Angular is built on top of the much awaited Bootstrap 4 and Angular. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 or Angular project; you can just import the World Charity Design System Angular style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
+World Charity Help Poor People is built on top of the much awaited Bootstrap 4 and Angular. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 or Angular project; you can just import the World Charity Help Poor People style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
 
 
 ## Table of Contents
@@ -68,14 +68,14 @@ World Charity Design System Angular is built on top of the much awaited Bootstra
 
 
 ## Documentation
-The documentation for the BLK Design System Angular is hosted at our [website](https://demos.creative-tim.com/blk-design-system-angular/#/documentation/overview).
+The documentation for the BLK Help Poor People is hosted at our [website](https://demos.creative-tim.com/blk-design-system-angular/#/documentation/overview).
 
 
 ## File Structure
 Within the download you'll find the following directories and files:
 
 ```
-World Charity Design System Angular
+World Charity Help Poor People
 ├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md
 ├── LICENSE.md
@@ -159,9 +159,9 @@ At present, we officially aim to support the last two versions of the following 
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the BLK Design System Angular. Here are some advices for our users that want to report an issue:
+We use GitHub Issues as the official bug tracker for the BLK Help Poor People. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the BLK Design System Angular. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=blkdsa-readme).
+1. Make sure that you are using the latest version of the BLK Help Poor People. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=blkdsa-readme).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 

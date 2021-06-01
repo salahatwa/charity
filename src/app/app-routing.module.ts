@@ -1,19 +1,21 @@
-import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
-import { Routes, RouterModule } from "@angular/router";
+import { RouterModule, Routes } from "@angular/router";
+import { AboutUsComponent } from './pages/about-us/aboutus.component';
+import { ContactpageComponent } from './pages/contact/contact.component';
+import { DonatepageComponent } from "./pages/donate/donate.component";
+import { HomeComponent } from "./pages/home/home.component";
+import { LandingpageComponent } from "./pages/landingpage/landingpage.component";
 
-import { IndexComponent } from "./pages/index/index.component";
-import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
-import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
-import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
-  { path: "home", component: IndexComponent },
-  { path: "profile", component: ProfilepageComponent },
-  { path: "register", component: RegisterpageComponent },
-  { path: "landing", component: LandingpageComponent }
+  { path: "home", component: HomeComponent },
+  { path: "donate", component: DonatepageComponent },
+  { path: "contact", component: ContactpageComponent },
+  { path: "about", component: AboutUsComponent },
+  { path: "our-works", component: LandingpageComponent }
 ];
 
 @NgModule({
@@ -26,4 +28,4 @@ const routes: Routes = [
   ],
   exports: []
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

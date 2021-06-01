@@ -1,107 +1,4 @@
-<nav
-  class="navbar navbar-expand-lg fixed-top navbar-transparent"
-  color-on-scroll="100"
-  id="navbar-top"
->
-  <div class="container">
-    <div class="navbar-translate">
-      <a
-        class="navbar-brand"
-        [routerLink]="['/home']"
-        placement="bottom"
-        tooltip="Designed and Coded by Creative Tim"
-      >
-        <span> World Charity </span> Design System Angular
-      </a>
-      <button
-        aria-controls="navigation-index"
-        aria-label="Toggle navigation"
-        class="navbar-toggler navbar-toggler"
-        [attr.aria-expanded]="!isCollapsed"
-        (click)="isCollapsed = !isCollapsed"
-        id="navigation"
-        type="button"
-      >
-        <span class="navbar-toggler-bar bar1"> </span>
-        <span class="navbar-toggler-bar bar2"> </span>
-        <span class="navbar-toggler-bar bar3"> </span>
-      </button>
-    </div>
-    <div
-      class="navbar-collapse justify-content-end"
-      [collapse]="isCollapsed"
-      id="navigation"
-    >
-      <div class="navbar-collapse-header">
-        <div class="row">
-          <div class="col-6 collapse-brand"><a> World Charity </a></div>
-          <div class="col-6 collapse-close text-right">
-            <button
-              aria-controls="navigation-index"
-              aria-label="Toggle navigation"
-              class="navbar-toggler"
-              [attr.aria-expanded]="!isCollapsed"
-              (click)="isCollapsed = !isCollapsed"
-              id="navigation"
-              type="button"
-            >
-              <i class="tim-icons icon-simple-remove"> </i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <ul class="navbar-nav">
-        <li class="nav-item p-0">
-          <a
-            class="nav-link"
-            href="https://twitter.com/CreativeTim"
-            placement="bottom"
-            target="_blank"
-            tooltip="Follow us on Twitter"
-          >
-            <i class="fab fa-twitter"> </i>
-            <p class="d-lg-none d-xl-none">Twitter</p>
-          </a>
-        </li>
-        <li class="nav-item p-0">
-          <a
-            class="nav-link"
-            href="https://www.facebook.com/CreativeTim"
-            placement="bottom"
-            target="_blank"
-            tooltip="Like us on Facebook"
-          >
-            <i class="fab fa-facebook-square"> </i>
-            <p class="d-lg-none d-xl-none">Facebook</p>
-          </a>
-        </li>
-        <li class="nav-item p-0">
-          <a
-            class="nav-link"
-            href="https://www.instagram.com/CreativeTimOfficial"
-            placement="bottom"
-            target="_blank"
-            tooltip="Follow us on Instagram"
-          >
-            <i class="fab fa-instagram"> </i>
-            <p class="d-lg-none d-xl-none">Instagram</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/home']"> Back to Kit </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            href="https://github.com/creativetimofficial/blk-design-system-angular/issues"
-          >
-            Have an issue?
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<app-navbar></app-navbar>
 <div class="wrapper">
   <div class="page-header">
     <img class="path" src="assets/img/blob.png" />
@@ -135,34 +32,13 @@
 
           <!-- <h2 class="mt-4">Price</h2> -->
 
-          <div class="btn-wrapper">
-            <div class="button-container">
-              <button
-                class="btn btn-icon btn-simple btn-round btn-neutral mr-1"
-                href="javascript:void(0)"
-              >
-                <i class="fab fa-twitter"> </i>
-              </button>
-              <button
-                class="btn btn-icon btn-simple btn-round btn-neutral mr-1"
-                href="javascript:void(0)"
-              >
-                <i class="fab fa-dribbble"> </i>
-              </button>
-              <button
-                class="btn btn-icon btn-simple btn-round btn-neutral"
-                href="javascript:void(0)"
-              >
-                <i class="fab fa-facebook"> </i>
-              </button>
-            </div>
-          </div>
+       
         </div>
         <div class="col-lg-4 col-md-5">
           <img
             alt="Circle image"
             class="img-fluid"
-            src="assets/img/etherum.png"
+            src="assets/img/poor/thalir_bg_girl.jpg"
           />
         </div>
       </div>
@@ -280,19 +156,19 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12">
-          <h1 class="text-center">Your best benefit</h1>
+          <h1 class="text-center">Would you be willing to help by giving a donation</h1>
           <div class="row row-grid justify-content-center">
             <div class="col-lg-3">
               <div class="info">
                 <div class="icon icon-primary">
                   <i class="tim-icons icon-money-coins"> </i>
                 </div>
-                <h4 class="info-title">Low Commission</h4>
+                <h4 class="info-title">Feed childrens</h4>
                 <hr class="line-primary" />
 
                 <p>
-                  Divide details about your work into parts. Write a few lines
-                  about each one. A paragraph describing a feature will.
+                  Making a donation is a way of reaching out a helping hand. By providing even a small donation, you can be part of an effort to provide medical assistance, 
+                  supply food and shelter, and help families rebuild their lives and communities
                 </p>
               </div>
             </div>
@@ -301,13 +177,12 @@
                 <div class="icon icon-warning">
                   <i class="tim-icons icon-chart-pie-36"> </i>
                 </div>
-                <h4 class="info-title">High Incomes</h4>
+                <h4 class="info-title">Orphan</h4>
                 <hr class="line-warning" />
 
                 <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing
-                  feature will be a feature.
+                  Orphans are at the top of our Association's priorities, as it takes care of normal orphans and handicapped orphans through orphanages , and surrogate mothers take care of them, and an integrated group of supervisors and psychosocial specialists to provide integrated care for children.
+                  The association is also very interested in the alternative families project.
                 </p>
               </div>
             </div>
@@ -316,13 +191,12 @@
                 <div class="icon icon-success">
                   <i class="tim-icons icon-single-02"> </i>
                 </div>
-                <h4 class="info-title">Verified People</h4>
+                <h4 class="info-title">Good offers</h4>
                 <hr class="line-success" />
 
                 <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing be
-                  enough.
+                  We offers is an idea to urge donors to benefit from the rewards of charity with the reception of the holy of year, where the donor can give his donation in ways that benefit the beneficiaries, including support for a patient's eye operation so that he can see again .. or Participation in a prosthetic limb for a poor family head so that she is able to work and take care of her family ,
+                  or pure water compass to protect an entire family from diseases , heart operation to save a child.
                 </p>
               </div>
             </div>
@@ -353,8 +227,8 @@
             <div class="card-body">
               <div class="justify-content-center">
                 <div class="numbers">
-                  <p class="card-title">573 K</p>
-                  <p class="card-category text-white">Satisfied customers</p>
+                  <p class="card-title">73 K</p>
+                  <p class="card-category text-white">feeded childrens</p>
                 </div>
               </div>
             </div>
@@ -363,8 +237,8 @@
             <div class="card-body">
               <div class="justify-content-center">
                 <div class="numbers">
-                  <p class="card-title">10 425</p>
-                  <p class="card-category text-white">Business</p>
+                  <p class="card-title">3,012</p>
+                  <p class="card-category text-white">helped poor families</p>
                 </div>
               </div>
             </div>
@@ -374,11 +248,9 @@
           <div class="px-md-5">
             <hr class="line-success" />
 
-            <h3>Awesome features</h3>
+            <h3>Supporting isolation hospitals</h3>
             <p>
-              The design system comes with three pre-built pages to help you get
-              started faster. You can change the text and images and you're good
-              to go.
+              Isolation hospitals bear a great responsibility in light of the current crisis and face challenges to complete their role in receiving and treating the injured .. and due to the lack of tools, supplies and medical devices in many hospitals, especially in the governorates and regions. This calls for everyone to join together to cover their needs and to cross us from the current crisis to safety.
             </p>
             <ul class="list-unstyled mt-5">
               <li class="py-2">
@@ -386,7 +258,7 @@
                   <div class="icon icon-success mb-2">
                     <i class="tim-icons icon-vector"> </i>
                   </div>
-                  <div class="ml-3"><h6>Carefully crafted components</h6></div>
+                  <div class="ml-3"><h6>Supporting isolation hospitals</h6></div>
                 </div>
               </li>
               <li class="py-2">
@@ -394,7 +266,7 @@
                   <div class="icon icon-success mb-2">
                     <i class="tim-icons icon-tap-02"> </i>
                   </div>
-                  <div class="ml-3"><h6>Amazing page examples</h6></div>
+                  <div class="ml-3"><h6>Support with medical tools and supplies</h6></div>
                 </div>
               </li>
               <li class="py-2">
@@ -402,7 +274,7 @@
                   <div class="icon icon-success mb-2">
                     <i class="tim-icons icon-single-02"> </i>
                   </div>
-                  <div class="ml-3"><h6>Super friendly support team</h6></div>
+                  <div class="ml-3"><h6>Helping childrens lifes</h6></div>
                 </div>
               </li>
             </ul>
@@ -423,7 +295,7 @@
             <div class="col-sm-6 text-left">
               <hr class="line-primary" />
 
-              <h5 class="card-category">Total Investments</h5>
+              <h5 class="card-category">Total Donation</h5>
               <h2 class="card-title">Performance</h2>
             </div>
           </div>
@@ -443,8 +315,8 @@
           <hr class="line-info" />
 
           <h1>
-            Choose the coin
-            <span class="text-info"> that fits your needs </span>
+            Choose area
+            <span class="text-info"> that fits your donation needs </span>
           </h1>
         </div>
       </div>
@@ -458,7 +330,6 @@
               <div class="row">
                 <div class="col-md-12 text-center">
                   <h4 class="text-uppercase">{{ type.title }}</h4>
-                  <span> Plan </span>
                   <hr class="line-primary" />
                 </div>
               </div>
@@ -471,93 +342,12 @@
               </div>
             </div>
             <div class="card-footer text-center">
-              <button class="btn btn-primary btn-simple">Donate</button>
+              <button class="btn btn-primary btn-simple" [routerLink]="['/donate']">Donate</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3"><h1 class="title">World Charity</h1></div>
-        <div class="col-md-3">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/home']"> Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/landing']"> Landing </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/register']"> Register </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/profile']"> Profile </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <ul class="nav">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://creative-tim.com/contact-us?ref=blkdsa-footer"
-              >
-                Contact Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://creative-tim.com/about-us?ref=blkdsa-footer"
-              >
-                About Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://creative-tim.com/blog?ref=blkdsa-footer"
-              >
-                Blog
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://opensource.org/licenses/MIT">
-                License
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h3 class="title">Follow us:</h3>
-          <div class="btn-wrapper profile">
-            <a
-              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
-              href="https://twitter.com/creativetim"
-              target="_blank"
-            >
-              <i class="fab fa-twitter"> </i>
-            </a>
-            <a
-              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
-              href="https://www.facebook.com/creativetim"
-              target="_blank"
-            >
-              <i class="fab fa-facebook-square"> </i>
-            </a>
-            <a
-              class="btn btn-icon btn-neutral btn-round btn-simple"
-              href="https://dribbble.com/creativetim"
-              target="_blank"
-            >
-              <i class="fab fa-dribbble"> </i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <app-footer></app-footer>
 </div>

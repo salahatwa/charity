@@ -52,18 +52,19 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.onWindowScroll(event);
 
-    this.translate.setDefaultLang('ar');
+    this.translate.setDefaultLang('en');
     this.storageSevrice.setDefaultPrice('3');
-    this.ipInfoService.getIpInfo().pipe(finalize(() => {
+    this.storageSevrice.setLocal("en_US");
+    // this.ipInfoService.getIpInfo().pipe(finalize(() => {
 
-      if (this.storageSevrice.getLocal() == undefined || this.storageSevrice.getLocal() == null) {
-        console.log("Set default local en_US");
-        this.storageSevrice.setLocal("en_US");
-      }
-    })).subscribe(data => {
-      console.log(data);
-      this.storageSevrice.setLocal(this.clm.getLocaleByAlpha2(data.country));
-    });
+    //   if (this.storageSevrice.getLocal() == undefined || this.storageSevrice.getLocal() == null) {
+    //     console.log("Set default local en_US");
+    //     this.storageSevrice.setLocal("en_US");
+    //   }
+    // })).subscribe(data => {
+    //   console.log(data);
+    //   this.storageSevrice.setLocal(this.clm.getLocaleByAlpha2(data.country));
+    // });
   }
 
 

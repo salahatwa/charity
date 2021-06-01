@@ -1,6 +1,6 @@
 /*
 =========================================================
-* BLK Design System Angular - v1.2.0
+* BLK Help Poor People - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-angular

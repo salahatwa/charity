@@ -15,19 +15,19 @@ export class LandingpageComponent implements OnInit, OnDestroy {
 
   donateTypes = [
     {
-      image: 'assets/img/bitcoin.png',
+      image: 'assets/img/poor/-pon-or-a-well-2.jpg',
       title: "Poor Children",
-      list: ['happpy', 'sa']
+      list: ['Feed them', 'Save their life','buy cloths','etc..']
     },
     {
-      image: 'assets/img/etherum.png',
+      image: 'assets/img/poor/images.jpg',
       title: "Poor Families",
-      list: ['Feed them', 'buy cloths', 'find work']
+      list: ['Feed them', 'buy cloths', 'find works for them','etc..']
     },
     {
-      image: 'assets/img/ripp.png',
+      image: 'assets/img/poor/images99.jpg',
       title: "Womens",
-      list: ['Marriage', 'buy cloths', 'find work']
+      list: ['Marriage', 'buy cloths', 'find works','etc..']
     }
   ]
   constructor(private storageSevrice: StorageService) { }
