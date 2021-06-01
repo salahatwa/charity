@@ -14,7 +14,7 @@ export class PayDonateComponent implements OnInit {
   public showCancel: boolean = false;
   public showError: boolean = false;
 
-  focus1;
+  focus;
   public payPalConfig?: IPayPalConfig;
   defaultPrice;
 
@@ -23,7 +23,7 @@ export class PayDonateComponent implements OnInit {
   @ViewChild('priceElem') priceElem?: ElementRef;
 
 
-  constructor(private storageSevrice: StorageService,private modalService:BsModalService) { }
+  constructor(private storageSevrice: StorageService, private modalService: BsModalService) { }
 
   ngOnInit(): void {
     this.defaultPrice = this.storageSevrice.getDefaultPrice();
@@ -31,7 +31,10 @@ export class PayDonateComponent implements OnInit {
   }
 
 
-  changePrice(): void {
+  changePrice(value?: any): void {
+    console.log(value)
+    if (value)
+      this.defaultPrice = value;
     // this.resetStatus();
     console.log('>>>>>>>>>');
     if (this.priceElem) {
@@ -86,6 +89,7 @@ export class PayDonateComponent implements OnInit {
         commit: 'true'
       },
       style: {
+        // color:'gold',
         label: 'paypal',
         layout: 'vertical'
       },
@@ -104,7 +108,7 @@ export class PayDonateComponent implements OnInit {
       },
       onClientAuthorization: (data) => {
         // this.showSuccess = true;
-         this.modalService.show(SuccessPayDialogComponent);
+        this.modalService.show(SuccessPayDialogComponent);
         console.log('onClientAuthorization - you should probably inform your server about completed transaction at this point', data);
       },
       onCancel: (data, actions) => {

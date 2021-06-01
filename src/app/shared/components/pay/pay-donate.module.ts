@@ -5,6 +5,7 @@ import { NgxPayPalModule } from '../paypal/ngx-paypal.module';
 import { FormsModule } from '@angular/forms';
 import { SuccessPayDialogComponent } from './dialogs/success-pay-dialog.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -13,6 +14,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
   imports: [
     CommonModule,
     FormsModule,
+    TranslateModule,
     ModalModule.forRoot(),
     NgxPayPalModule
   ],

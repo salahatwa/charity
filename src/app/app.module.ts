@@ -9,6 +9,8 @@ import { PagesModule } from "./pages/pages.module";
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +31,7 @@ import { PagesModule } from "./pages/pages.module";
     // CollapseModule.forRoot(),
     // TabsModule.forRoot(),
     PagesModule,
+
     // PaginationModule.forRoot(),
     // AlertModule.forRoot(),
     // BsDatepickerModule.forRoot(),

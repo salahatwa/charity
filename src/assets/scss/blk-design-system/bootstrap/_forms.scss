@@ -7,14 +7,14 @@
 .form-control {
   display: block;
   width: 100%;
-  height: $input-height;
+  // height: $input-height;
   padding: $input-padding-y $input-padding-x;
   font-size: $font-size-base;
   line-height: $input-line-height;
-  color: $input-color;
-  background-color: $input-bg;
+  // color: $input-color;
+  background-color: #e7f2f0;
   background-clip: padding-box;
-  border: $input-border-width solid $input-border-color;
+  border: $input-border-width solid;
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
   @if $enable-rounded {
@@ -30,7 +30,7 @@
 
   // Unstyle the caret on `<select>`s in IE10+.
   &::-ms-expand {
-    background-color: transparent;
+    // background-color: transparent;
     border: 0;
   }
 

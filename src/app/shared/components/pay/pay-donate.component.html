@@ -1,11 +1,8 @@
-<div class="card card-register">
-  <div class="card-header">
-    <img alt="Card image" class="card-img" src="assets/img/square1-red.png" />
+<!-- <div class="card text-center">
 
-    <h4 class="card-title">Donate</h4>
-  </div>
+  <h4 class="card-title">Donate</h4>
   <div class="card-body">
-
+    
     <div class="mt-2" *ngIf="showSuccess">
       <div class="alert alert-success mt-2">
         Yeah! Your <em>sandbox</em> transaction was successful.
@@ -51,8 +48,94 @@
         </button>
       </div>
     </form>
-  </div>
-  <div class="card-footer">
+
     <ngx-paypal [config]="payPalConfig"></ngx-paypal>
   </div>
-</div>
+  <div class="card-footer">
+   
+  </div>
+</div> -->
+
+<article class="postcard blue">
+  <a class="postcard__img_link" href="#">
+    <img
+      class="postcard__img"
+      src="assets/img/chester-wade.jpg"
+      alt="Image Title"
+    />
+  </a>
+  <div class="postcard__text">
+    <h1 class="postcard__title blue"><a href="#">Donate</a></h1>
+    <!-- <div class="postcard__subtitle small">
+      <time datetime="2020-05-25 12:00:00">
+        <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+      </time>
+    </div> -->
+    <div class="postcard__bar"></div>
+    <div class="postcard__preview-txt">
+      {{ "common.case1-desc" | translate }}
+    </div>
+    <div class="postcard__tagbox">
+      <form class="form" name="form" #f="ngForm">
+        <!-- <div
+          class="input-group"
+          [ngClass]="{ 'input-group-focus': focus === true }"
+        >
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="tim-icons icon-money-coins"> </i>
+            </div>
+          </div>
+          <input
+            class="form-control"
+            placeholder="Price"
+            name="defaultPrice"
+            [(ngModel)]="defaultPrice"
+            (ngModelChange)="changePrice()"
+            type="text"
+            #priceElem
+            (focus)="focus = true"
+            (blur)="focus = false"
+          />
+          <button
+            class="btn btn-primary btn-sm input-group-prepend"
+            (click)="changePrice()"
+          >
+            amount
+          </button>
+        </div> -->
+
+        <div class="form-group">
+          <label>
+            <i class="tim-icons icon-money-coins"> </i> Donation amount</label
+          >
+          <div class="input-group mb-3">
+            <select class="form-control drop-code "  name="defaultPrice" [(ngModel)]="defaultPrice"
+            (change)="changePrice($event.target.value)">
+              <option value="3">3</option>
+              <option value="10">10</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Price"
+              name="defaultPrice"
+              [(ngModel)]="defaultPrice"
+              (ngModelChange)="changePrice()"
+              type="text"
+              #priceElem
+              (focus)="focus = true"
+              (blur)="focus = false"
+            />
+          </div>
+        </div>
+      </form>
+
+      <div class="tag__item">
+        <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+      </div>
+    </div>
+  </div>
+</article>
